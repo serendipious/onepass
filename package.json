@@ -1,0 +1,26 @@
+{
+  "name": "onepass",
+  "version": "0.1.0",
+  "description": "CLI to manage passwords similar to 1password cloud chain",
+  "main": "index.js",
+  "bin": {
+    "onepass": "./bin/onepass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:serendipious/onepass.git"
+  },
+  "author": "Ankit Kuwadekar",
+  "license": "All Rights Reserved",
+  "dependencies": {
+    "ascli": "~0.3.0",
+    "commander": "~2.2.0",
+    "debug": "~0.8.0",
+    "lodash": "~2.4.1",
+    "read": "~1.0.5",
+    "sync": "~0.2.2"
+  },
+  "devDependencies": {
+    "coffee-script": "1.7.1"
+  }
+}
