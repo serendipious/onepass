@@ -26,9 +26,13 @@ PassUtils = require '../lib/pass-utils'
 cli       = ascli.app('onepass')
 log       = debug('onepass')
 
+# Enable all log namespaces
 debug.enable '*'
 
-keychain_location = "#{process.env.HOME}/.onepass_keychain"
+# Use keychain location from env if ONEPASS_PATH is set
+# Else use the user's home and create a keychain there.
+keychain_location = "#{process.env.ONEPASS_PATH or process.env.HOME}/.onepass_keychain"
+
 KEYCHAIN_READ_ERROR_MSG = """
   Keychain was locked and could not be opened. Possible Reasons are:
 
