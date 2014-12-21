@@ -2,9 +2,13 @@
   "name": "onepass",
   "version": "0.1.0",
   "description": "CLI to manage passwords similar to 1password cloud chain",
-  "main": "index.js",
+  "preferGlobal": true,
   "bin": {
     "onepass": "./bin/onepass"
+  },
+  "scripts": {
+    "clean": "rm -rf ./lib",
+    "build": "npm run clean && mkdir -p ./lib && ./node_modules/.bin/coffee -o ./lib -c ./src/*"
   },
   "repository": {
     "type": "git",
