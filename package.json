@@ -19,8 +19,8 @@
   "dependencies": {
     "ascli": "~0.3.0",
     "commander": "~2.2.0",
-    "debug": "~0.8.0",
-    "lodash": "~2.4.1",
+    "debug": "~2.6.9",
+    "lodash": "~4.17.5",
     "read": "~1.0.5",
     "sync": "~0.2.2"
   },
